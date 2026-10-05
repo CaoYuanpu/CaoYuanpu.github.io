@@ -140,3 +140,22 @@ h2{display:flex;align-items:center;gap:9px}.section-icon{width:20px;height:20px;
 
 .about .opportunities,.about .opportunities strong,.about .opportunities a{color:#a34f4b}
 .about .opportunities a:hover{color:#853d39}
+
+/* A quiet, optional cat corner. */
+.cat-corner{position:fixed;right:22px;bottom:20px;z-index:30;display:flex;align-items:flex-end;flex-direction:column;gap:8px}
+.cat-toggle{width:42px;height:42px;border:1px solid #e0e3e5;border-radius:50%;background:#ffffffed;color:#8c8077;display:grid;place-items:center;cursor:pointer;box-shadow:0 3px 14px #29333d0d;transition:transform .2s,color .2s}
+.cat-toggle:hover{transform:translateY(-2px);color:#66564b}
+.cat-stage{position:relative;width:200px;text-align:center}.cat-stage[hidden]{display:none}
+.cat-close{position:absolute;top:0;right:0;width:25px;height:25px;border:0;border-radius:50%;background:#ffffffed;color:#858585;font-size:20px;cursor:pointer}
+.cat-speech{display:inline-block;max-width:170px;padding:8px 12px;margin:8px 18px 6px 0;background:#fff;border:1px solid #e6e8ea;border-radius:12px;font-size:12px;line-height:1.5;color:#6e6b68;box-shadow:0 3px 12px #00000006}
+.cat-friend{display:block;margin:auto;padding:0;border:0;background:transparent;cursor:pointer;transform-origin:50% 85%}.cat-friend img{display:block;width:180px;height:180px;object-fit:contain;filter:drop-shadow(0 5px 5px #0000000b)}
+.cat-wiggle{animation:cat-wiggle .45s ease-in-out}@keyframes cat-wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-5deg)}75%{transform:rotate(5deg)}}
+@media(max-width:600px){.cat-corner{right:12px;bottom:14px}.cat-stage{width:155px}.cat-friend img{width:140px;height:140px}.cat-toggle{width:36px;height:36px}.cat-speech{font-size:11px;max-width:135px}}
+@media(prefers-reduced-motion:reduce){.cat-wiggle{animation:none}.cat-toggle{transition:none}}
+
+/* Keep the cat corner underneath the left profile card. */
+.sidebar-column{position:sticky;top:110px;align-self:start}
+.sidebar-column .profile{position:static}
+.cat-corner{position:static;margin:16px auto 0;align-items:center;gap:8px}
+.cat-toggle{order:-1}.cat-stage{width:200px}.cat-close{right:0}
+@media(max-width:600px){.sidebar-column{position:static}.cat-corner{margin:0 auto 18px}.cat-stage{width:155px}}
