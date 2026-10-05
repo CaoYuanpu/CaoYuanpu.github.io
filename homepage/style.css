@@ -1,0 +1,142 @@
+:root{--ink:#29333d;--muted:#76818c;--blue:#275e8b;--line:#e7ebef;--surface:#fff;--bg:#f5f7f9}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}a:focus-visible{outline:2px solid var(--blue);outline-offset:5px}strong{font-weight:600}.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(15px)}.top-inner{max-width:1120px;padding:17px 28px;margin:auto;display:flex;justify-content:space-between;align-items:center}.brand{font-size:16px;font-weight:600;color:var(--ink)}nav{display:flex;gap:28px}nav a{font-size:13px;color:#596673}.layout{max-width:1120px;margin:42px auto;display:grid;grid-template-columns:245px minmax(0,1fr);gap:32px;padding:0 28px}.profile{position:sticky;top:110px;align-self:start;padding:20px 4px}h1{font-size:32px;line-height:1.2;letter-spacing:-1.2px;margin:0 0 15px}p{margin:0 0 15px}.position{font-size:17px;margin-bottom:4px}.affiliation{font-size:14px;color:#586775;line-height:1.8}.location{font-size:12px;color:var(--muted);margin-top:24px}.contact{display:flex;gap:20px;padding-bottom:28px;border-bottom:1px solid #dfe5eb}.contact a{font-size:13px;font-weight:500}.contact span{font-size:11px;margin-left:4px}.research-note{margin-top:26px}.eyebrow{font-size:10px;color:var(--muted);letter-spacing:1.6px;font-weight:600}.research-note p{font-size:13px;line-height:1.9;margin-top:10px;color:#5e6c78}.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:27px 30px;margin-bottom:24px;box-shadow:0 3px 10px rgba(32,49,66,.025)}h2{font-size:20px;letter-spacing:-.3px;line-height:1.4;margin:0 0 18px}h3{font-size:15px;line-height:1.5;margin:0 0 8px}.about>p{font-size:15px;line-height:1.85}.credentials{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;border-top:1px solid var(--line);padding-top:23px;margin-top:25px}.credentials h3{font-size:14px;margin-bottom:16px}.credentials p{font-size:12px;line-height:1.8}.muted{color:var(--muted)}.small{font-size:12px}.news-row{display:grid;grid-template-columns:94px 1fr;gap:18px;margin-top:14px}.date{font-size:11px;color:var(--muted);padding-top:3px}.news-row p{font-size:13px;margin:0}.section-heading{display:flex;justify-content:space-between;align-items:baseline;gap:16px}.paper{border-top:1px solid var(--line);padding:23px 0}.paper:last-child{padding-bottom:0}.venue{display:inline-block;color:var(--blue);background:#edf4fa;font-size:10px;font-weight:600;letter-spacing:.2px;padding:3px 8px;border-radius:4px;margin-bottom:9px}.paper h3{font-size:15px;font-weight:600;line-height:1.55}.authors{font-size:12px;line-height:1.8;color:#697580;margin-bottom:8px}.authors strong{color:var(--ink)}.paper-link{font-size:11px;font-weight:600}.paper-links{display:flex;gap:20px}.role{display:flex;justify-content:space-between;gap:20px}.role h3{font-size:16px}.role-name{font-size:13px;color:var(--blue)}.experience+.experience{border-top:1px solid var(--line);padding-top:23px;margin-top:24px}ul{padding-left:18px;margin:10px 0 0}li{font-size:13px;line-height:1.85;padding-left:3px;margin-bottom:10px}footer{font-size:10px;color:var(--muted);display:flex;justify-content:space-between;gap:20px;padding:3px 6px 20px}footer a{color:var(--muted)}.skip{position:absolute;left:15px;top:-80px;z-index:20;padding:8px;background:white}.skip:focus{top:5px}@media(max-width:800px){.layout{grid-template-columns:190px minmax(0,1fr);gap:20px;padding:0 20px}.panel{padding:24px}.credentials{grid-template-columns:1fr;gap:12px}h1{font-size:27px}.section-heading{display:block}}@media(max-width:600px){.top-inner{padding:14px 20px}.brand{font-size:14px}nav{gap:15px}nav a{font-size:11px}.layout{display:block;margin-top:20px}.profile{position:static;padding:10px 4px 26px}.profile h1{font-size:32px}.affiliation br:first-child{display:none}.location{margin-top:12px}.contact{border:0;padding-bottom:0}.research-note{display:none}.panel{padding:23px 21px;margin-bottom:18px}.credentials{grid-template-columns:1fr;gap:10px}.news-row{grid-template-columns:70px 1fr;gap:12px}.role{display:block}.role h3{margin-bottom:1px}.role-name{margin-top:6px}footer{display:block}footer span{display:block;margin-top:4px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Match the reference template's centered profile card. */
+.profile{top:80px;padding:24px 24px 16px;background:#fff;border-radius:12.8px;box-shadow:0 2px 5px rgba(0,0,0,.075);text-align:center}
+.profile h1{font-size:24px;line-height:1.2;letter-spacing:0;font-weight:700;margin:0 0 9px}
+.profile .position,.profile .affiliation{font-size:13px;line-height:1.5;color:#29333d;font-weight:400;margin:0}
+.profile .email-text{display:inline-block;font:12px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;color:#007bff;margin-top:1px}
+.profile .contact{justify-content:center;gap:9px;border:0;padding:10px 0 0}
+.profile .contact a{color:#007bff;display:inline-flex;padding:0 4px}
+@media(max-width:800px) and (min-width:601px){.profile{padding:24px 12px 16px}.profile h1{font-size:22px}.profile .email-text{font-size:11px}}
+@media(max-width:600px){.profile{padding:24px;margin-bottom:18px}.profile h1{font-size:24px}.profile .affiliation br:first-child{display:initial}}
+
+.profile .portrait{display:block;width:180px;height:180px;max-width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;margin:0 auto 20px}
+@media(max-width:800px) and (min-width:601px){.profile .portrait{width:154px;height:154px}}
+
+/* Match Bochuan Cao’s name and heading font stack. */
+.profile h1,.about h2{font-family:"Trebuchet MS",Helvetica,sans-serif;font-weight:700}
+
+/* Neutral gray links, social icons and publication labels. */
+:root{--blue:#60666d}
+.profile .email-text,.profile .contact a{color:#60666d}
+a:hover{color:#30363c}
+.venue{background:#f0f1f2;color:#60666d}
+
+/* Lato body typography from Saining Xie's homepage. */
+@font-face{font-family:Lato;font-style:normal;font-weight:400;font-display:swap;src:url(lato-regular.woff2) format('woff2')}
+@font-face{font-family:Lato;font-style:normal;font-weight:700;font-display:swap;src:url(lato-bold.woff2) format('woff2')}
+@font-face{font-family:Lato;font-style:italic;font-weight:400;font-display:swap;src:url(lato-italic.woff2) format('woff2')}
+body{font-family:Lato,Verdana,Helvetica,sans-serif}
+.brand,.profile h1,h2,h3{font-family:"Trebuchet MS",Helvetica,sans-serif}
+
+/* Underlined text links; keep navigation and social icons uncluttered. */
+main a,.profile .email-text{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+
+.school-logo{display:inline-block;width:18px;height:18px;object-fit:contain;vertical-align:-3px;margin-left:3px}
+
+.school-logo{margin-left:2px}
+
+.publication-note{font-size:13px;line-height:1.8;color:var(--muted);margin:-5px 0 20px}.publication-note sup{color:var(--ink)}
+
+.paper-meta{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px;margin-top:8px}
+.paper-meta .venue{background:none;padding:0;margin:0;border-radius:0;font-size:12px;font-weight:400;font-style:italic;color:var(--muted)}
+.paper-meta .paper-link{font-size:12px;font-weight:400}
+.meta-separator{color:var(--muted);font-size:12px}
+
+/* Venue badge first, with adjacent Paper / Code links. */
+.paper-meta{margin:0 0 9px;align-items:center;gap:9px}
+.paper-meta .venue{display:inline-block;background:#f0f1f2;color:#60666d;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;font-style:normal;letter-spacing:.2px;margin:0}
+
+.paper-meta .paper-link{display:inline-block;background:#f0f1f2;color:#60666d;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:600;letter-spacing:.2px;text-decoration:none;line-height:1.7}
+.paper-meta .paper-link:hover{background:#e2e5e8;color:#30363c}
+.paper-meta{gap:6px}
+
+/* Distinguish resource links from the filled venue label. */
+.paper-meta .paper-link{background:#fff;border:1px solid #d7dce1;color:#60666d;padding:2px 8px;font-weight:500;text-decoration:none}
+.paper-meta .paper-link:hover{background:#f5f6f7;border-color:#919aa3;color:#30363c;text-decoration:underline;text-underline-offset:2px}
+
+.publication-heading{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.publication-toggle{display:flex;gap:3px;padding:3px;border:1px solid #e1e4e7;border-radius:6px;background:#f5f6f7}
+.publication-toggle button{font:12px Lato,Verdana,sans-serif;color:#727980;background:transparent;border:0;padding:5px 11px;border-radius:4px;cursor:pointer}
+.publication-toggle button[aria-pressed="true"]{background:white;color:#30363c;box-shadow:0 1px 3px #00000015}
+.publication-toggle button:focus-visible{outline:2px solid #60666d;outline-offset:2px}
+.paper[hidden]{display:none}
+@media(max-width:600px){.publication-heading{align-items:center}.publication-heading h2{font-size:18px}.publication-toggle button{padding:5px 8px}}
+
+/* Refined, understated publication switch. */
+.publication-heading{align-items:center;margin-bottom:17px;gap:20px}
+.publication-heading h2{margin:0}
+.publication-toggle{gap:4px;padding:4px;background:#eef0f2;border:0;border-radius:999px;flex-shrink:0}
+.publication-toggle button{min-width:58px;padding:6px 13px;border-radius:999px;font-size:12px;line-height:1.3;font-weight:600;color:#7b838b;transition:background .15s,color .15s,box-shadow .15s}
+.publication-toggle button:hover{color:#30363c;background:#ffffff70}
+.publication-toggle button[aria-pressed="true"]{background:#fff;color:#3a424a;box-shadow:0 1px 4px rgba(31,42,53,.1)}
+.publication-note{margin:0 0 22px}
+@media(max-width:600px){.publication-heading{gap:10px}.publication-toggle button{min-width:48px;padding:6px 10px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.publication-toggle button{transition:none}}
+
+/* Editorial-style publication tabs. */
+.publication-toggle{gap:22px;padding:0;background:transparent;border:0;border-radius:0;align-self:center}
+.publication-toggle button{position:relative;min-width:0;padding:6px 0 8px;border-radius:0;background:transparent;color:#91979d;font-size:12px;line-height:1.4;font-weight:400;letter-spacing:.2px;box-shadow:none;transition:color .18s ease}
+.publication-toggle button::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:1px;background:#424a52;transform:scaleX(0);transform-origin:center;transition:transform .18s ease}
+.publication-toggle button:hover{color:#424a52;background:transparent}
+.publication-toggle button[aria-pressed="true"]{background:transparent;color:#30363c;font-weight:700;box-shadow:none}
+.publication-toggle button[aria-pressed="true"]::after{transform:scaleX(1)}
+@media(max-width:600px){.publication-toggle{gap:17px}.publication-toggle button{min-width:0;padding:6px 0 8px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){.publication-toggle button,.publication-toggle button::after{transition:none}}
+
+.education-entry+.education-entry{border-top:1px solid var(--line);padding-top:20px;margin-top:20px}
+.education-entry p{font-size:13px;margin:4px 0}
+.education-entry .small{font-size:12px}
+
+@media(max-width:600px){.top-inner{flex-wrap:wrap;gap:8px}nav{flex-wrap:wrap;gap:14px}}
+
+.award-entry+.award-entry{border-top:1px solid var(--line);padding-top:17px;margin-top:17px}.award-entry p{margin:4px 0 0}.award-entry h3{margin-bottom:0}
+
+.education-entry+.education-entry,.award-entry+.award-entry{border-top:0}
+
+/* Match education and award entries to publication typography. */
+.education-entry .role h3,.award-entry .role h3{font-size:15px;line-height:1.55;font-weight:600}
+.education-entry p,.education-entry .small,.award-entry .small,.education-entry .role .small{font-size:12px;line-height:1.8}
+
+/* Compact education and awards with subtle separators. */
+.education-entry+.education-entry,.award-entry+.award-entry{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}
+.education-entry .role h3{margin-bottom:0}
+.education-entry p{margin:2px 0}
+.award-entry p{margin:2px 0 0}
+
+.paper{padding:16px 0}.paper:last-child{padding-bottom:0}
+
+/* Service list and navigation spacing. */
+.service-list{margin-top:8px}.service-list li{margin-bottom:4px;font-size:13px}
+nav{gap:20px;flex-wrap:wrap}.top-inner{gap:20px}
+@media(max-width:800px){.top-inner{flex-wrap:wrap;gap:8px}nav{gap:14px}}
+
+.internship-summary{font-size:13px;line-height:1.85;margin:8px 0 0}
+
+/* Compact internship entries with inline company marks. */
+#experience .experience+.experience{padding-top:12px;margin-top:12px}
+#experience .role h3{font-size:15px;margin-bottom:0}
+#experience .role-name{margin:2px 0 0;font-size:12px}
+#experience .internship-summary{margin-top:4px}
+.company-logo{display:inline-block;width:18px;height:18px;object-fit:contain;margin-left:5px;vertical-align:-3px}
+
+/* Align dates with the first line of each entry heading. */
+.role{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;column-gap:20px}
+.role>span{justify-self:end;text-align:right;white-space:nowrap;font-size:12px;line-height:1.8;font-variant-numeric:tabular-nums}
+@media(max-width:600px){.role{column-gap:12px}.role>span{font-size:11px}}
+@media(max-width:380px){.role{grid-template-columns:1fr}.role>span{justify-self:start;text-align:left}}
+
+h2{display:flex;align-items:center;gap:9px}.section-icon{width:20px;height:20px;flex-shrink:0;color:#80878d}
+
+/* Soft color accents for section icons. */
+#about .section-icon{color:#80878d}
+#experience .section-icon{color:#35658c}
+#publications .section-icon{color:#738fa8}
+#education .section-icon{color:#8b80aa}
+#awards .section-icon{color:#c39c4b}
+#service .section-icon{color:#719888}
+
+.profile h1{margin-bottom:5px}.profile .chinese-name{font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:13px;font-weight:400;letter-spacing:2px;line-height:1.5;color:#626970;margin:0 0 10px}
+
+.about .opportunities,.about .opportunities strong,.about .opportunities a{color:#a34f4b}
+.about .opportunities a:hover{color:#853d39}
