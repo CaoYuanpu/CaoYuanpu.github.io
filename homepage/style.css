@@ -162,4 +162,4 @@ h2{display:flex;align-items:center;gap:9px}.section-icon{width:20px;height:20px;
 
 .paper-meta .venue .oral{color:#a34f4b}
 
-.profile .resume-link{display:inline-block;margin-top:14px;font-size:13px;color:#626970;text-decoration:underline;text-underline-offset:3px}
+.profile .contact{align-items:center}.profile .contact .cv-link{align-items:center;justify-content:center;height:24px;font:700 17px/1 Arial,sans-serif;letter-spacing:-.5px;color:#60666d;text-decoration:none}.profile .contact .cv-link:hover{color:#29333d}
