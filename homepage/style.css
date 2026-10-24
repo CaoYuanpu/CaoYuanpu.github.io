@@ -165,3 +165,5 @@ h2{display:flex;align-items:center;gap:9px}.section-icon{width:20px;height:20px;
 .profile .contact{align-items:center}.profile .contact .cv-link{align-items:center;justify-content:center;height:24px;font:700 17px/1 Arial,sans-serif;letter-spacing:-.5px;color:#60666d;text-decoration:none}.profile .contact .cv-link:hover{color:#29333d}
 
 .profile .real-photo{width:min(180px,100%);height:auto;aspect-ratio:1;border-radius:50%;background:url(avatar-blue.jpg?v=hq-20261020) 48% 30%/170% auto no-repeat}
+
+.brand{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}.brand img{display:block;flex-shrink:0}
